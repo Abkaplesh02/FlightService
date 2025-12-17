@@ -22,6 +22,8 @@ pipeline{
         }
         failure{
             echo 'The build failed.'
+            echo" Please check the logs for more details."
+            echo 'Notifying the team about the failure.'
         }
         always{
             echo 'This will always run after the build.'
